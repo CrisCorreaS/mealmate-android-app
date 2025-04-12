@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_light"
+    tools:context=".DiscoverActivity">
+
+    <RelativeLayout
+        android:id="@+id/white_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/new_tasty_meals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/calistoga_regular"
+            android:text="@string/new_tasty_meals"
+            android:textColor="@color/primary_dark"
+            android:textSize="30sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/round_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/user_profile_picture"
+                style="@style/UserImage"
+                android:src="@drawable/user_profile_photo" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/white_section"
+        android:layout_marginTop="-2dp">
+
+        <ImageView
+            android:id="@+id/central_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="@string/vegetable_quinoa_bowl"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_vegetable_quinoa_bowl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/gradient_top"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/custom_gradient_up"
+            app:layout_constraintBottom_toBottomOf="@id/central_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/gradient_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_gradient_secondary"
+            app:layout_constraintBottom_toBottomOf="@id/central_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/dinner_type"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/dinner"
+            android:src="@drawable/meal_types_dinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/basic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="350dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_search_background"
+            android:fontFamily="@font/calistoga_regular"
+            android:paddingHorizontal="6dp"
+            android:text="@string/_3_servings"
+            android:textColor="@color/primary_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_search_background"
+            android:drawableStart="@drawable/clock_time"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/calistoga_regular"
+            android:paddingHorizontal="6dp"
+            android:text="@string/_20_min"
+            android:textColor="@color/primary_dark"
+            android:textSize="14sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_search_background"
+            android:drawableStart="@drawable/calories"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/calistoga_regular"
+            android:paddingHorizontal="6dp"
+            android:text="@string/_496_kcal"
+            android:textColor="@color/primary_dark"
+            android:textSize="14sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/meal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basic_info"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/calistoga_regular"
+        android:paddingHorizontal="6dp"
+        android:text="@string/vegetable_quinoa_bowl"
+        android:textColor="@color/secondary"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/meal_name"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/calistoga_regular"
+                android:text="@string/meal_categories"
+                android:textColor="@color/primary_dark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/breakfast_category"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:id="@+id/breakfast_category_img"
+                            style="@style/MealTypeImage"
+                            android:contentDescription="@string/croque_madame"
+                            android:src="@drawable/food_croque_madame" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/calistoga_regular"
+                        android:text="@string/breakfast"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lunch_category"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:id="@+id/lunch_category_img"
+                            style="@style/MealTypeImage"
+                            android:contentDescription="@string/spicy_tuna_poke_bowl"
+                            android:src="@drawable/food_spicy_tuna_poke_bowl" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/calistoga_regular"
+                        android:text="@string/lunch"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/snack_category"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:id="@+id/snack_category_img"
+                            style="@style/MealTypeImage"
+                            android:contentDescription="@string/chia_pudding"
+                            android:src="@drawable/food_chia_pudding" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/calistoga_regular"
+                        android:text="@string/snack"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dinner_category"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:id="@+id/dinner_category_img"
+                            style="@style/MealTypeImage"
+                            android:contentDescription="@string/creamy_tuscan_ravioli"
+                            android:src="@drawable/food_creamy_tuscan_ravioli" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/calistoga_regular"
+                        android:text="@string/dinner"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calistoga_regular"
+                    android:text="@string/popular_meals"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/view_all_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="end"
+                    android:text="@string/view_all"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/new_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="110dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_bottom_nav_background"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/custom_bottom_nav_selector"
+        app:itemTextColor="@color/custom_bottom_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navmenu" />
+</RelativeLayout>

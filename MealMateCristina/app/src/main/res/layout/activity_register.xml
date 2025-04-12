@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/photo_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/topImageView"
+            style="@style/ImageViewTop"
+            android:layout_height="200dp"
+            android:contentDescription="@string/pasta_al_pesto"
+            android:src="@drawable/food_pasta_al_pesto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/CustomGradient"
+            app:layout_constraintBottom_toBottomOf="@id/topImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_header"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp"
+            tools:context=".LoginActivity">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/CustomProgressBar"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="124dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/logo_full_big_green_bg_no" />
+
+            <TextView
+                style="@style/CustomTitle"
+                android:paddingStart="20dp"
+                android:text="@string/register" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/CustomEditTextFormIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext_two_states"
+                    android:hint="@string/name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/CustomEditTextFormIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext_two_states"
+                    android:hint="@string/email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/text_gray_medium">
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/CustomEditTextFormIcon"
+                    android:background="@drawable/custom_edittext_two_states"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/text_gray_medium">
+
+                <EditText
+                    android:id="@+id/passwordConfirm"
+                    style="@style/CustomEditTextFormIcon"
+                    android:background="@drawable/custom_edittext_two_states"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/error1"
+                    style="@style/CustomTextViewPassword"
+                    android:drawablePadding="5dp"
+                    android:text="@string/error_12_characters"
+                    app:drawableLeftCompat="@drawable/do_check_circle_no" />
+
+                <TextView
+                    android:id="@+id/error2"
+                    style="@style/CustomTextViewPassword"
+                    android:drawableLeft="@drawable/do_check_circle_no"
+                    android:drawablePadding="5dp"
+                    android:text="@string/error_no_name" />
+
+                <TextView
+                    android:id="@+id/error3"
+                    style="@style/CustomTextViewPassword"
+                    android:drawableLeft="@drawable/do_check_circle_no"
+                    android:drawablePadding="5dp"
+                    android:text="@string/error_symbol_number" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/agree_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calistoga_regular"
+                android:text="@string/agree_terms_privacy"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/CustomButtonGreenBg"
+                android:layout_marginTop="10dp"
+                android:text="@string/create_account" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calistoga_regular"
+                    android:gravity="center"
+                    android:text="@string/have_an_account"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/log_in_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calistoga_regular"
+                    android:paddingStart="8dp"
+                    android:text="@string/log_in_now"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

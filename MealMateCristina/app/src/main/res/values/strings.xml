@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="web_id">AIzaSyBYQg0R8crRgkgNVtRfVFrRqovVJ3qtlv0</string>
+
+    <!-- WelcomeActivity Screen -->
+    <string name="slogan">Discovering Quick, Tasty, Healthy Meals</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_google">Sign up with Google</string>
+    <string name="dont_have_account">Don’t have an account?</string>
+    <string name="sing_up_now">sing up now</string>
+
+    <!-- Registration Screen -->
+    <string name="register">Create your account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="error_12_characters">Must be at least 12 characters</string>
+    <string name="error_no_name">Can\'t include your name or email address</string>
+    <string name="error_symbol_number">Must have at least a symbol and a number</string>
+    <string name="agree_terms_privacy">Agree to the Terms of Use and Privacy Policy</string>
+    <string name="create_account">Create account</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="log_in_now">log in now</string>
+
+    <!-- Terms Privacy Activity Screen -->
+    <string name="terms_of_use_amp_privacy_policy"><![CDATA[Terms of Use & Privacy Policy]]></string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="terms_of_use_text">Welcome to MealMate! By using this application, you agree to the following terms:\n\n1. Usage of Service:\nMealMate provides recipe recommendations, meal tracking, and dietary management tools. You agree to use this service responsibly and not for any unlawful purposes.\n\n2. Account Responsibility:\nYou are responsible for maintaining the confidentiality of your account credentials and any activities under your account.\n\n3. Content Ownership:\nAll content provided by MealMate is owned by the app developers. You may not copy, modify, or redistribute content without permission.\n\n4. Health Disclaimer:\nMealMate provides dietary suggestions and meal plans based on user input but is not a substitute for professional medical advice. Consult a healthcare professional for specific health concerns.\n\n5. Modifications:\nWe reserve the right to modify these terms at any time. Continued use of the app signifies your acceptance of the updated terms.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_text">MealMate is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your information:\n\n1. Data Collection:\nWe collect personal information (e.g., name, email) and dietary preferences to provide personalized services. We may also collect device information to improve app performance.\n\n2. Data Usage:\nYour data is used to enhance your experience, such as generating meal plans and providing tailored recommendations. We will not sell or share your data with third parties without your consent, except as required by law.\n\n3. Security:\nWe use industry-standard security measures to protect your information. However, no method of electronic transmission is completely secure, and we cannot guarantee absolute data security.\n\n4. Third-Party Services:\nMealMate may integrate with third-party services (e.g., payment gateways or analytics tools). These services have their own privacy policies, and we recommend reviewing them.\n\n5. User Rights:\nYou have the right to access, modify, or delete your personal data. Contact us at support@mealmate.com for requests.\n\n6. Changes to Policy:\nWe may update this Privacy Policy periodically. Please review it regularly to stay informed.\n\nBy using MealMate, you acknowledge that you have read and understood our Privacy Policy.</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <!-- LoginActivity Screen -->
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="remember">Remember me</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="incorrect_email_or_password">Incorrect email or password. Please try again!</string>
+    <string name="login">Login</string>
+
+    <!-- Forgot Password Screen -->
+    <string name="enter_email_forgot">Enter your email to create a new password</string>
+    <string name="send_email">Send email</string>
+    <string name="back_to_login">Back to Login</string>
+
+    <!-- Meals -->
+    <string name="spicy_tuna_poke_bowl">Spicy Tuna Poke Bowl</string>
+    <string name="pasta_al_pesto">Pasta al Pesto</string>
+    <string name="fig_amp_goat_cheese_toast"><![CDATA[Fig & Goat Cheese Toast]]></string>
+    <string name="ham_amp_cheese_panini"><![CDATA[Ham & Cheese Panini]]></string>
+    <string name="chicken_tinga_tacos">Chicken Tinga Tacos</string>
+    <string name="chicken_stir_fry">Chicken Stir-Fry</string>
+    <string name="croque_madame">Croque Madame</string>
+    <string name="chia_pudding">Chia Pudding</string>
+    <string name="creamy_tuscan_ravioli">Creamy Tuscan Ravioli</string>
+    <string name="vegetable_quinoa_bowl">Vegetable Quinoa Bowl</string>
+
+    <!-- Meal Types -->
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="snack">Snack</string>
+    <string name="dinner">Dinner</string>
+    <string name="spaghetti_carbonara">Spaghetti Carbonara</string>
+
+    <!-- Meal Description -->
+    <string name="description_chicken_stir_fry">Tender chicken, sautéed vegetables and noodles in a savory...</string>
+    <string name="description_spaghetti_carbonara">Al dente spaghetti, crispy pancetta, and a creamy sauce made with with eggs, Pecorino Romano cheese and black pepper, creating a rich and comforting Italian classic</string>
+
+    <!-- Meal Duration -->
+    <string name="_20_min">20 min</string>
+    <string name="_25_min">25 min</string>
+    <string name="_30_min">30 min</string>
+
+    <!-- Meal Servings -->
+    <string name="_2_servings">2 servings</string>
+    <string name="_3_servings">3 servings</string>
+
+    <!-- Meal Calories -->
+    <string name="_461_kcal">461 Kcal</string>
+    <string name="_496_kcal">496 Kcal</string>
+    <string name="_867_kcal">867 Kcal</string>
+
+    <!-- Meal Ingredients -->
+    <string name="ingredients_carbonara">350g of spaghetti \n\n200g of guanciale \n\n4 whole medium eggs \n\n100g of grated Pecorino Romano \n\nground black pepper</string>
+
+    <!-- Meal Instructions -->
+    <string name="instructions_pasta_carbonara">Step 1 \nPut the guanciale and oil in a large skillet. Sauté over medium heat until the edges of the guanciale pieces are just turning brown, about 2 minutes. Don\'t let it get too crisp. Set the pan and its contents aside but keep warm. \n\nStep 2 \nBring 5 quarts (5 liters) of water to a boil in an 8-quart (8-liter) pot over high heat. When the water boils, add 3 tablespoons kosher salt, then add the pasta and cook, stirring occasionally, untilal dente.\n\nStep 3\nWhile the pasta is cooking, break the eggs into a small bowl and add all the cheese and a generous grinding of pepper. Whisk gently until the mixture is smooth.\n\nStep 4 \nDrain the pasta (reserving and keeping warm a cup of its water) and put it in the skillet with the guanciale over low heat. Toss quickly to mix well.\n\nStep 5 \nHolding the skillet slightly above but not touching the burner, pour the egg and cheese mixture in a stream into the pasta. Now, if you have the skill, toss the pasta with a deft movement of the wrist to blend all the contents of the pan. If you don\'t, remove the pan from the heat and mix quickly with two wooden spoons. If you have a warm spot, such as a food warmer or even over a pilot light, rest the pan there while you work.\n\nStep 6 \nWhatever you do, work fast or the pasta will get cold and the eggs will stay raw and runny. Ideally the heat of the pasta will cook the egg just enough, and the sauce should be creamy. You can mix in a tiny bit of the reserved water to smooth things out, but you probably won\'t need to.\n\nStep 7 \nTransfer to individual heated bowls or plates and serve instantaneously.</string>
+
+    <!-- Bottom Navigation Menu -->
+    <string name="home">Home</string>
+    <string name="discover">Discover</string>
+    <string name="list">List</string>
+    <string name="profile">Profile</string>
+
+    <!-- Home Activity Screen -->
+    <string name="good_morning">Good Morning!</string>
+    <string name="sunderland_uk">Sunderland, UK</string>
+    <string name="location_disabled">Location is disabled</string>
+    <string name="location_not_found">Unable to find location</string>
+    <string name="new_meals">New Meals</string>
+    <string name="location_error">Error fetching location</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="search_for_food_or_meals">Search for food or meals...</string>
+    <string name="view_all">View All</string>
+    <string name="meal_categories">Meal Categories</string>
+
+    <!-- Discover Activity Screen -->
+    <string name="new_tasty_meals">New Tasty Meals!</string>
+    <string name="popular_meals">Popular Meals</string>
+
+    <!-- Meal Details Activity Screen -->
+    <string name="read_more">Read More</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="informations">Informations</string>
+    <string name="_32g_proteins">32g Proteins</string>
+    <string name="_95_carbs">95 Carbs</string>
+    <string name="_39g_fats">39g Fats</string>
+    <string name="add_meal">Add Meal</string>
+
+    <!-- List Activity Screen -->
+    <string name="grocery_shopping_list">Grocery Shopping List</string>
+    <string name="toolbar_menu_icon">Toolbar menu icon</string>
+    <string name="i_need_more">I need more ...</string>
+
+    <!-- List Item Screen -->
+    <string name="spinach">Spinach</string>
+    <string name="already_bought">Already bought</string>
+
+    <!-- Menu Options List Item Screen -->
+    <string name="share_list_text">Share List</string>
+    <string name="clear_list_text">Clear List</string>
+    <string name="delete_list_text">Delete List</string>
+    <string name="remove_all_text">Remove All</string>
+    <string name="add_all_text">Add All</string>
+
+    <!-- Create, Edit and Delete Items -->
+    <string name="edit_item">Edit Item</string>
+    <string name="category_name">Category Name</string>
+    <string name="create_item">Create Item</string>
+    <string name="price">Price</string>
+
+    <!-- Profile Activity Screen -->
+    <string name="today">Today</string>
+    <string name="calendar">Calendar</string>
+    <string name="friday">FRIDAY</string>
+    <string name="_2_00_pm">2:00 PM</string>
+    <string name="_3_00_pm">3:00 PM</string>
+    <string name="united_kingdom">United Kingdom</string>
+    <string name="spain">Spain</string>
+    <string name="today_s_menu">Today\'s Menu</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday_cap">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- Create Meal Activity Screen -->
+    <string name="create_meal">Create meal</string>
+    <string name="meal_title">Meal Title</string>
+    <string name="enter_meal_title">Enter meal title</string>
+    <string name="meal_type">Meal Type</string>
+    <string name="number_of_servings">Number of Servings</string>
+    <string name="enter_number_of_servings">Enter number of servings</string>
+    <string name="duration_minutes">Duration (minutes)</string>
+    <string name="enter_duration">Enter duration</string>
+    <string name="meal_description">Meal Description</string>
+    <string name="enter_meal_description">Enter meal description</string>
+    <string name="meal_ingredients">Meal Ingredients</string>
+    <string name="enter_ingredients_between_comas">Enter ingredients between comas</string>
+    <string name="enter_instructions">Enter instructions</string>
+    <string name="meal_instructions">Meal Instructions</string>
+    <string name="macronutrients_information">Macronutrients Information</string>
+    <string name="calories_kcal">Calories (Kcal)</string>
+    <string name="enter_calories">Enter calories</string>
+    <string name="proteins_grams">Proteins (grams)</string>
+    <string name="enter_proteins">Enter proteins</string>
+    <string name="carbs_grams">Carbs (grams)</string>
+    <string name="enter_carbohydrates">Enter carbohydrates</string>
+    <string name="fats_grams">Fats (grams)</string>
+    <string name="enter_fats">Enter fats</string>
+    <string name="visual_resources">Visual Resources</string>
+    <string name="image_url">Image URL</string>
+    <string name="enter_image_url">Enter image URL</string>
+    <string name="save_meal">Save Meal</string>
+
+
+</resources>

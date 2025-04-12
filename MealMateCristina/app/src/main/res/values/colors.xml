@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#357800</color>
+    <color name="primary_light">#FFFEFE</color>
+    <color name="primary_dark">#030203</color>
+
+    <!-- Secondary and Accent Colors -->
+    <color name="secondary">#7C583C</color>
+    <color name="secondary_light">#F8F4EC</color>
+    <color name="accent">#F38632</color>
+
+    <!-- Text Colors -->
+    <color name="text_dark">#49454F</color>
+    <color name="text_gray_dark">#706a79</color>
+    <color name="text_gray_medium">#999999</color>
+    <color name="text_gray_light">#B3B3B3</color>
+
+    <!-- Meal Colors -->
+    <color name="meal_breakfast">#E3F4E1</color>
+    <color name="meal_lunch">#F4E7E1</color>
+    <color name="meal_dinner">#E2E1F4</color>
+    <color name="meal_snack">#F8F4EC</color>
+
+    <!-- Meals Macronutrients -->
+    <color name="meal_calories">#fdeddf</color>
+    <color name="meal_calories_overlay">#F38632</color>
+    <color name="meal_protein">#fae3ec</color>
+    <color name="meal_protein_overlay">#e14d8b</color>
+    <color name="meal_carbohydrates">#dfe9d6</color>
+    <color name="meal_carbohydrates_overlay">#2a7101</color>
+    <color name="meal_fats">#ebe3f7</color>
+    <color name="meal_fats_overlay">#7542c4</color>
+
+    <!-- Ingredient Categories -->
+    <color name="category_vegetables">#7cb243</color>
+    <color name="category_fruits">#E47373</color>
+    <color name="category_grains_and_starches">#fda626</color>
+    <color name="category_proteins">#ef6191</color>
+    <color name="category_spices_and_seasonings">#bfc934</color>
+    <color name="category_oils_and_fats">#fcd636</color>
+    <color name="category_beverages">#7885cb</color>
+    <color name="category_nuts_seeds_and_legumes">#8d6e62</color>
+    <color name="category_sweeteners">#fe6f43</color>
+    <color name="category_snacks_and_ready_to_eat">#b868c6</color>
+    <color name="category_dairy_alternatives">#43a4f3</color>
+    <color name="category_frozen_foods">#4dccdf</color>
+    <color name="category_miscellaneous">#8e99a2</color>
+
+    <!-- State Colors -->
+    <color name="success">#357800</color>
+    <color name="error">#ff0033</color>
+</resources>

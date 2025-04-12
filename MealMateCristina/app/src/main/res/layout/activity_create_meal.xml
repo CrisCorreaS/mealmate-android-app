@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context=".CreateMealActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/primary_light">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/cross"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/calistoga_regular"
+            android:text="@string/create_meal"
+            android:textColor="@color/primary_light"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/toolbar_menu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/toolbar_menu_icon"
+            android:src="@drawable/bin_delete" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/meal_title" />
+
+            <EditText
+                android:id="@+id/meal_title_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_meal_title"
+                />
+
+            <TextView
+                android:id="@+id/type_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/meal_type" />
+
+            <Spinner
+                android:id="@+id/meal_type_spinner"
+                style="@style/CustomFormEditText"
+                />
+
+            <TextView
+                android:id="@+id/servings_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/number_of_servings" />
+
+            <EditText
+                android:id="@+id/meal_servings_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_number_of_servings"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/duration_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/duration_minutes" />
+
+            <EditText
+                android:id="@+id/meal_duration_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_duration"
+                android:inputType="number"
+                 />
+
+            <TextView
+                android:id="@+id/description_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/meal_description" />
+
+            <EditText
+                android:id="@+id/meal_description_input"
+                style="@style/CustomFormTextArea"
+                android:hint="@string/enter_meal_description" />
+
+            <TextView
+                android:id="@+id/ingredients_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/meal_ingredients" />
+
+            <EditText
+                android:id="@+id/meal_ingredients_input"
+                style="@style/CustomFormTextArea"
+                android:hint="@string/enter_ingredients_between_comas" />
+
+            <TextView
+                android:id="@+id/instructions_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/meal_instructions" />
+            
+            <EditText
+                android:id="@+id/meal_instructions_input"
+                style="@style/CustomFormTextArea"
+                android:hint="@string/enter_instructions" />
+
+            <TextView
+                style="@style/CustomFormTextView"
+                android:text="@string/macronutrients_information"/>
+
+            <TextView
+                android:id="@+id/calories_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/calories_kcal" />
+
+            <EditText
+                android:id="@+id/meal_calories_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_calories"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/proteins_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/proteins_grams" />
+
+            <EditText
+                android:id="@+id/meal_proteins_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_proteins"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/carbs_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/carbs_grams" />
+
+            <EditText
+                android:id="@+id/meal_carbs_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_carbohydrates"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/fats_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/fats_grams" />
+
+            <EditText
+                android:id="@+id/meal_fats_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_fats"
+                android:inputType="number"
+                />
+
+            <TextView
+                style="@style/CustomFormTextView"
+                android:text="@string/visual_resources"/>
+
+            <TextView
+                android:id="@+id/img_url_label"
+                style="@style/CustomFormTextViewLabels"
+                android:text="@string/image_url" />
+
+            <EditText
+                android:id="@+id/meal_img_url_input"
+                style="@style/CustomFormEditText"
+                android:hint="@string/enter_image_url"
+                android:inputType="textUri"
+                />
+
+            <Button
+                android:id="@+id/save_meal_button"
+                style="@style/CustomButtonGreenBg"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save_meal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

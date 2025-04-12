@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MealMateTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/primary_light</item>
+    </style>
+
+    <style name="Base.Theme.MealMateMealDetailsTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Base.Theme.MealMateListTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+    <style name="Theme.MealMateTheme" parent="Base.Theme.MealMateTheme" />
+    <style name="Theme.MealMateListTheme" parent="Base.Theme.MealMateListTheme" />
+    <style name="Theme.MealMateMealDetailsTheme" parent="Base.Theme.MealMateMealDetailsTheme" />
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+</resources>

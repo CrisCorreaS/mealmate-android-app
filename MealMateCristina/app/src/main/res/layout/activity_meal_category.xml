@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_light"
+    tools:context=".MealCategoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/white_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/calistoga_regular"
+            android:drawableLeft="@drawable/arrow_back"
+            android:drawablePadding="20dp"
+            android:text="@string/meal_categories"
+            android:textColor="@color/primary_dark"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/white_section"
+        android:layout_marginHorizontal="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center_horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="20dp"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/meal_item" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+/*/build/
+/*/gradle/
+/*/.gradle/
+/*/.idea/
+**/local.properties
+**/proguard-rules.pro
+**/google-services.json
+**/build.gradle.kts
+**/gradle.properties
+**/gradlew
+**/gradlew.bat
+**/settings.gradle.kts

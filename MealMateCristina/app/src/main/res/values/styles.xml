@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MealMateTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <!-- For TextViews that are Titles -->
+    <style name="CustomTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:fontFamily">@font/calistoga_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- For Error TextViews -->
+    <style name="CustomTextViewError">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginVertical">2dp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/error</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!-- For Password TextViews -->
+    <style name="CustomTextViewPassword">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginVertical">2dp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!-- For EditTexts in Forms -->
+    <style name="CustomEditTextForm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:ems">35</item>
+    </style>
+
+    <!-- For EditTexts in Forms with Icons -->
+    <style name="CustomEditTextFormIcon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:ems">35</item>
+    </style>
+
+    <!-- For Buttons with Green Background -->
+    <style name="CustomButtonGreenBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/calistoga_regular</item>
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/primary_light</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginHorizontal">55dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- For Buttons with Black Background -->
+    <style name="CustomButtonBlackBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/calistoga_regular</item>
+        <item name="android:backgroundTint">@color/primary_dark</item>
+        <item name="android:textColor">@color/primary_light</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- For Spinners -->
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- For ImageViews in the Top  -->
+    <style name="ImageViewTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- For ImageViews that are Small User Images -->
+    <style name="UserImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- For Round ImageViews of Meal Types -->
+    <style name="MealTypeImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- For the Custom Gradient Bottom -->
+    <style name="CustomGradient">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">@drawable/custom_gradient</item>
+    </style>
+
+    <!-- For the Custom Gradient Up -->
+    <style name="CustomGradientUp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">500dp</item>
+        <item name="android:background">@drawable/custom_gradient_up</item>
+    </style>
+
+    <!-- For ProgressBar -->
+    <style name="CustomProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateTint">@color/primary</item>
+    </style>
+
+    <!-- For Meal Information in Meal Details -->
+    <style name="CustomMealInformation">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:fontFamily">@font/calistoga_regular</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- For Titles in Meal Details -->
+    <style name="CustomMealTitleInformation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/calistoga_regular</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- For Text in Meal Details -->
+    <style name="CustomMealTextInformation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">"@font/montserrat_regular</item>
+        <item name="android:textColor">@color/text_gray_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- For Label TextViews in Create Meal -->
+    <style name="CustomFormTextViewLabels">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/calistoga_regular</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_dark</item>
+    </style>
+
+    <!-- For Simple EditText in Create Meal -->
+    <style name="CustomFormEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/custom_edittext_two_states</item>
+        <item name="android:inputType">text</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/text_gray_dark</item>
+    </style>
+
+    <!-- For Text Area EditText in Create Meal -->
+    <style name="CustomFormTextArea">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:background">@drawable/custom_edittext_two_states</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:gravity">top</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:minLines">3</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textColorHint">@color/text_gray_dark</item>
+    </style>
+
+    <!-- For Text Separators TextViews in Create Meal -->
+    <style name="CustomFormTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:fontFamily">@font/calistoga_regular</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>
