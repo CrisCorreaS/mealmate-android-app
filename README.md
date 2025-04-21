@@ -77,13 +77,13 @@ Stores all meal images and user-generated content securely. It's connected with 
 - **Color Systems**: Dual palettes for macronutrients and ingredient types to aid quick user decisions.
 - **Wireframing & Mockups**: Designed using GoodNotes & Figma.
 
-1. Wireframe made with GoodNotes
+### 1. Wireframe made with GoodNotes
 ![wireframe](assets/img/wireframe.png)
 
-1. Mockup made with Figma
+### 2. Mockup made with Figma
 ![mockup](assets/img/mockup.png)
   
-1. Mockup navigation made with Figma 
+### 3. Mockup navigation made with Figma 
 ![mockup](assets/img/mockup-prototype.png)
 
 ### 🧠 Design Philosophy
